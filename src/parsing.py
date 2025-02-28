@@ -82,43 +82,4 @@ def get_data():
                address,
                revenue,
                growth_rate]
-        #
-        # print(active,
-        #       inn,
-        #       name,
-        #       full_name,
-        #       category,
-        #       address,
-        #       revenue,
-        #       growth_rate,
-        #       sep="\n"
-        #       )
 
-        # cards_companies = soup.find_all('div', class_='company-card info-card')
-        # for card in cards_companies:
-        #
-        #
-        #
-        #     url_rbc = card.find(
-        #         "a", class_="company-name-highlight").get("href")
-        #     company_info = card.find_all("p", class_="company-card__info")
-        #     info_comp = {}
-        #     for info in company_info:
-        #         t = info.text.split(":")
-        #         if len(t) == 1:
-        #             info_comp['Род деятельности'] = t[0]
-        #         else:
-        #             info_comp[t[0]] = t[1]
-        #
-        #     inn = info_comp.get("ИНН")
-        #     address = info_comp.get("Юридический адрес")
-        #     growth_rate = info_comp.get("Темп прироста")
-        #     type_of_activity = info_comp.get("Род деятельности")
-        #     revenue = info_comp.get("Выручка")
-        #     if revenue != '0,0 ₽' and active.lower() == 'действует':
-        #         yield active, inn, name, full_name, address, type_of_activity, growth_rate, revenue, url_rbc
-        #     else:
-        #         continue
-
-
-# get_data(import_data)
